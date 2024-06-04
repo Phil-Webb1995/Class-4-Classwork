@@ -1,0 +1,22 @@
+html{
+    padding: 0px;
+    margin: 0px;
+    border: 10px solid greenyellow;
+    background-color: greenyellow; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.logo{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid green; 
+    padding: 5px;
+}
+
+.white{
+    color: white;
+
+}
