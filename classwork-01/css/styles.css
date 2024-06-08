@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.section-heading {
+  padding: 10px;
+  background-color: maroon;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+  padding: 10px;
+  background-color: blueviolet;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.list-header {
+  text-decoration: underline;
+}
+
+ol li {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+ul {
+  color: blue;
+  max-height: 100px;
+  width: 50vw;
+  overflow-y: scroll;
+  list-style-type: disc;
+}
+
+ul li {
+  font-size: 16px; /* Optional: You can specify a different font size for the unordered list items if needed */
+}
+
+    /* Style for the footer */
+    footer {
+      clear: both;
+      color: white;
+      text-align: center;        
+      margin: 0; /* Remove default margin */
+      padding: 10px; /* Remove default padding */
+      justify-content: center; /* Center the items */
+      background-color: #333; /* Dark background for the nav */
+      position: fixed; /* Fix the footer to the bottom */
+      width: 100%; /* Make the footer full width */
+      bottom: 0; /* Position it at the bottom */
+      left: 0; /* Align to the left edge */
+      z-index: 1000; /* Ensure it stays on bottom */
+
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      padding: 0 5px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    footer p{
+      color: white;
+      background-color: #333; /* Dark background for the nav */
+      padding: 0%;
+    }
+
+

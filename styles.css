@@ -7,16 +7,191 @@ html{
 }
 
 
-.logo{
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
+
+
+/* Style for the logo */
+.logo {
+    border-radius: 30%;
+    width: 200px; 
+    height: 200px; 
     object-fit: cover;
-    border: 5px solid green; 
+    border: 2px solid green; 
     padding: 5px;
-}
+    position: relative; /* Allows top positioning */
+    top: 20px; /* Adjust this value to move the logo down */
+  }
 
 .white{
     color: white;
 
 }
+
+    /* Basic reset for the list */
+    nav ul {
+        list-style-type: none; /* Remove bullet points */
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
+        display: flex; /* Align items horizontally */
+        justify-content: center; /* Center the items */
+        background-color: #333; /* Dark background for the nav */
+        position: fixed; /* Fix the nav to the top */
+        width: 100%; /* Make the nav full width */
+        top: 0; /* Position it at the top */
+        left: 0; /* Align to the left edge */
+        z-index: 1000; /* Ensure it stays on top */
+      }
+  
+      /* Style for each list item */
+      nav ul li {
+        margin: 0 15px; /* Add space between items */
+      }
+  
+      /* Style for the links */
+      nav ul li a {
+        color: white; /* White text color */
+        text-decoration: none; /* Remove underline */
+        padding: 10px 20px; /* Add padding around the links */
+        display: block; /* Make the link a block element */
+        transition: background-color 0.3s; /* Smooth transition for hover effect */
+      }
+  
+      /* Hover effect for links */
+      nav ul li a:hover {
+        background-color: #555; /* Darker background on hover */
+      }
+
+      .sidenav {
+        width: 300px;
+        position: fixed;
+        right: 0;
+        top: 20px;
+        height: 100%;
+        background-color: #333; /* Dark background for the nav */
+        padding-top: 20px;
+    }
+    
+    .sidenav a {
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        display: block;
+    }
+    
+    .sidenav a:hover {
+        background-color: #575757;
+    }
+
+      /* Style for the form */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+  }
+  
+  /* Style for labels in the form */
+  form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the span inside labels */
+  form label span {
+    display: block;
+    width: 150px;
+    float: left;
+  }
+  
+  /* Style for buttons in the form */
+  form button {
+    background-color: blue;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    float: right;
+  }
+  
+  /* Hover effect for submit buttons */
+  button[type="submit"]:hover {
+    background-color: greenyellow;
+    color: black;
+  }
+  
+  /* Style for input with id 'name' */
+  input#name {
+    background-color: rgb(203, 241, 241);
+  }
+  
+  /* Hover effect for input with id 'name' */
+  input#name:hover {
+    background-color: rgb(241, 239, 203);
+  }
+  
+  /* Style for input with id 'age' */
+  input#age {
+    background-color: rgb(203, 241, 241);
+  }
+  
+  /* Hover effect for input with id 'age' */
+  input#age:hover {
+    background-color: rgb(241, 239, 203);
+  }
+  
+  /* Style for textarea */
+  textarea {
+    background-color: rgb(203, 241, 241);
+  }
+  
+  /* Hover effect for textarea */
+  textarea:hover {
+    background-color: rgb(241, 239, 203);
+  }
+  
+  /* Style for file upload container */
+  .file-upload {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Added margin for spacing */
+  }
+  
+  /* Style for the input with id 'file' */
+  input#file {
+    max-width: 200px;
+  }
+  
+  /* Extra style for spacing between span and input in file upload */
+  .file-upload span {
+    margin-right: 10px;
+  }
+
+    /* Style for the footer */
+    footer {
+        clear: both;
+        color: white;
+        text-align: center;        
+        margin: 0; /* Remove default margin */
+        padding: 10px; /* Remove default padding */
+        justify-content: center; /* Center the items */
+        background-color: #333; /* Dark background for the nav */
+        position: fixed; /* Fix the footer to the bottom */
+        width: 100%; /* Make the footer full width */
+        bottom: 0; /* Position it at the bottom */
+        left: 0; /* Align to the left edge */
+        z-index: 1000; /* Ensure it stays on bottom */
+
+      }
+  
+      footer a {
+        color: white;
+        text-decoration: none;
+        padding: 0 5px;
+      }
+  
+      footer a:hover {
+        text-decoration: underline;
+      }
+

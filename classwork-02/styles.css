@@ -1,0 +1,78 @@
+/* Define CSS variables for primary and secondary colors */
+:root {
+    --primary-color: #3498db; /* Blue */
+    --secondary-color: #2ecc71; /* Green */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Child selector: paragraphs directly inside .content div */
+.content > .text {
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+/* Attribute selector: paragraph with id "special" */
+#special {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#special:hover {
+    background-color: var(--primary-color);
+    color: black;
+}
+
+/* Class selector: links inside .content div */
+.content .link {
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+}
+
+.content .link:hover {
+    color: var(--primary-color);
+}
+
+.text {
+    color: black; /* This will be overridden by more specific rules */
+}
+
+    /* Style for the footer */
+    footer {
+        clear: both;
+        color: white;
+        text-align: center;        
+        margin: 0; /* Remove default margin */
+        padding: 10px; /* Remove default padding */
+        justify-content: center; /* Center the items */
+        background-color: #333; /* Dark background for the nav */
+        position: fixed; /* Fix the footer to the bottom */
+        width: 100%; /* Make the footer full width */
+        bottom: 0; /* Position it at the bottom */
+        left: 0; /* Align to the left edge */
+        z-index: 1000; /* Ensure it stays on bottom */
+
+      }
+  
+      footer a {
+        color: white;
+        text-decoration: none;
+        padding: 0 5px;
+      }
+  
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      footer.container2 p {
+        background-color: black;
+        color: white;
+        /* Add any additional styles as needed */
+    }

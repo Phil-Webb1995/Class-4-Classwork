@@ -4,31 +4,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="./styles.css"/>
+
+    <style>
+
+    </style>
 
 </head>
 <body>
     <header>
- 
+        <nav>
+            <ul>
+                <li><a href="./index.html">About</a></li>
+                <li><a href="./education.html">Education</a></li>
+                <li><a href="./work-experience.html">Work Experience</a></li>
+                <li><a href="./skills.html">Skills</a></li>
+                <li><a href="./classwork.html">Portfolio(Classwork)</a></li>
+                <li><a href="./contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
         <h1>
             <img class="logo" src="./Images/eng.jpg" alt="Electrical Engineer"/>
         </h1>
         <h2 class="white">Web-Development</h2>
-        <nav>
-            <ul>
-                <li><a href="./animals.html">Animals</a></li>
-                <li><a href="./food.html">Food</a></li>
-                <li><a href="./locations.html">Locations</a></li>
-                <li><a href="./contacts.html">Contacts</a></li>
-            </ul>
-        </nav>
+        
     </header>
-    <h1>Contacts</h1>
+    <h1>Contact</h1>
     <main>
-        <Form Action="mailto:">
-            <input type="email"/>
+
+        <section>
+            <h3>Subscription Signup</h3>
+            <article>
+                <p>Signup to our weekly newsletter where we will follow a range of Topics in relation to Web-Development.</p>
+        <Form action="back-end.js" method="post">
+            <fieldset>
+                <legend>Contact Information</legend>
+
+            <label for="name">
+            <span>Name</span>
+            <!--Regex to restrict text/numbers-->          
+              <input id="name" name="name" type="text" required />
+            </label>
+            <label for="email">
+                <span>Email</span>
+                <input id="name" type="text" required />
+                </label>
+
+                <label for="password">
+                    <span>Password</span>
+                    <input id="name" type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$" title="Minimum eight and maximum 10 characters, at least one uppercase letter, one lowercase letter, one number and one special character:" required />
+                    </label>
+
+                <label for="country">
+                    <span>Country</span>
+                    <select id="country" name="country" required>
+                        <optgroup label="North America"></optgroup>
+                        <option value="us">united States</option>
+                        <option value="ca">Canada</option>
+                    </optgroup>
+
+                        <optgroup label="Europe"></optgroup>
+                        <option value="ie">Ireland</option>
+                    </optgroup>
+                    </select>
+                </label>
+
+                <label for="dob">
+                    <span>Date of Birth</span>
+                    <input id="dob" name="dob" type="date" required />
+                    </label>
+
+                    <label for="age">
+                        <span>Age</span>
+                        <input id="age" name="age" type="number" required />
+                        </label>
+                    
+                    <label>
+                        <span>Describe yourself</span>
+                        <textarea name="description" maxlength="50" pattern=".{50}" title="actly 50 characters required" placeholder="in 50 characters or less"></textarea>
+                    </label>
+
+                    <label for="file" class="file-upload">
+                        <span>File Upload</span>
+                        <input id="file" name="file" type="file"/>
+                    </label>
+
+                    <br>
+                    <Fieldset>
+                        <legend>Preferences</legend>
+                        <label>
+                            <input type="checkbox" name="newsletter" />
+                            Subscribe to our newsletter
+                        </label>
+                        <label>
+                            <input type="checkbox" name="offers" />
+                            Receive Special Offers
+                        </label>
+
+
+                    </Fieldset>
+<br>
+            <button type="submit">Signup</button>
+        </fieldset>
         </Form>
+    </article>
+        </section>
     </main>
 
     <footer style="clear: both;">
